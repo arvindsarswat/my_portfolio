@@ -56,7 +56,6 @@ nav a {
   transform: scale(1.1);
 }
 
-/* Text */
 .hero h1 {
   font-size: 40px;
 }
@@ -109,15 +108,16 @@ h2 {
 /* Skills */
 .skills {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
 }
 
 .skill-box {
-  width: 40px;
-  height: 40px;
+  padding: 8px 12px;
   background: #38bdf8;
-  border-radius: 8px;
+  color: black;
+  border-radius: 20px;
+  font-size: 12px;
 }
 
 /* Footer */
@@ -152,9 +152,9 @@ footer {
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a passionate Computer Science student learning web development.
-      I enjoy building modern and responsive websites.
-      My goal is to become a skilled full stack developer and create impactful projects.
+      I am a dedicated Computer Science student with a strong interest in web development and programming.
+      I enjoy learning new technologies and building modern, responsive websites.
+      Currently, I am focusing on improving my skills in frontend development and exploring backend technologies to become a full stack developer.
     </p>
   </div>
 </section>
@@ -162,10 +162,12 @@ footer {
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
-    <div class="skill-box"></div>
-    <div class="skill-box"></div>
-    <div class="skill-box"></div>
-    <div class="skill-box"></div>
+    <div class="skill-box">C</div>
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">GitHub</div>
+    <div class="skill-box">Node.js</div>
   </div>
 </section>
 

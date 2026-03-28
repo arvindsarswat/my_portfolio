@@ -22,7 +22,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 20px 50px;
+  padding: 15px 30px;
 }
 
 nav h2 {
@@ -31,18 +31,34 @@ nav h2 {
 
 nav a {
   color: white;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 /* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 15px;
 }
 
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+/* Text */
 .hero h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .hero span {
@@ -50,55 +66,64 @@ nav a {
 }
 
 .hero p {
-  margin-top: 10px;
+  margin-top: 8px;
   color: #94a3b8;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
+  margin-top: 15px;
+  padding: 10px 18px;
   background: #38bdf8;
   color: black;
-  border-radius: 8px;
+  border-radius: 6px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 /* Sections */
 section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 30px 15px;
+  max-width: 900px;
   margin: auto;
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #38bdf8;
 }
 
 /* Cards */
 .card {
   background: rgba(255,255,255,0.05);
-  padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  backdrop-filter: blur(10px);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* Skills */
-.skills span {
-  display: inline-block;
+.skills {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-box {
+  width: 40px;
+  height: 40px;
   background: #38bdf8;
-  color: black;
-  padding: 8px 12px;
-  border-radius: 20px;
-  margin: 5px;
+  border-radius: 8px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   color: #94a3b8;
 }
 </style>
@@ -110,12 +135,14 @@ footer {
   <h2>Arvind</h2>
   <div>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="hero">
+  <img src="profile.jpeg" class="profile-img">
+
   <h1>Hi, I'm <span>Arvind Sarswat</span> 👋</h1>
   <p>CSE Student | Future Full Stack Developer 🚀</p>
   <a href="#contact" class="btn">Contact Me</a>
@@ -125,8 +152,8 @@ footer {
   <h2>About Me</h2>
   <div class="card">
     <p>
-      I am a passionate Computer Science student currently learning web development.
-      I enjoy building modern websites and exploring new technologies.
+      I am a passionate Computer Science student learning web development.
+      I enjoy building modern and responsive websites.
       My goal is to become a skilled full stack developer and create impactful projects.
     </p>
   </div>
@@ -135,10 +162,10 @@ footer {
 <section id="skills">
   <h2>Skills</h2>
   <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript (Learning)</span>
-    <span>GitHub</span>
+    <div class="skill-box"></div>
+    <div class="skill-box"></div>
+    <div class="skill-box"></div>
+    <div class="skill-box"></div>
   </div>
 </section>
 
@@ -146,12 +173,12 @@ footer {
   <h2>Projects</h2>
   <div class="card">
     <h3>Portfolio Website</h3>
-    <p>My personal portfolio website deployed online using Vercel.</p>
+    <p>My personal portfolio website deployed online.</p>
   </div>
 
   <div class="card">
     <h3>More Coming Soon...</h3>
-    <p>I am working on more projects 🚀</p>
+    <p>Currently working on new exciting projects 🚀</p>
   </div>
 </section>
 

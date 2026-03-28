@@ -1,1 +1,3 @@
-# my_portfolio
+git add .
+git commit -m "final portfolio"
+git push
